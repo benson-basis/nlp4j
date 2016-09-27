@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.emory.mathcs.nlp</groupId>
     <artifactId>nlp4j</artifactId>
-    <version>1.1.4-SNAPSHOT</version>
+    <version>1.1.4-basis-1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <url>http://nlp.mathcs.emory.edu</url>
     <scm>
         <url>https://github.com/emorynlp/nlp4j</url>
-        <connection>scm:git:git://github.com/emorynlp/nlp4j.git</connection>
-        <developerConnection>scm:git:git@github.com:emorynlp/nlp4j.git</developerConnection>
+        <connection>scm:git:git@github.com:benson-basis/nlp4j.git</connection>
+        <developerConnection>scm:git:git@github.com:benson-basis/nlp4j.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <parent>
@@ -17,6 +17,19 @@
         <artifactId>oss-parent</artifactId>
         <version>9</version>
     </parent>
+        <distributionManagement>
+        <repository>
+            <id>basistech.repo</id>
+            <name>Basis Local Repository</name>
+            <url>http://maven.basistech.net/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>basistech.snapshot.repo</id>
+            <name>Basistech Local Snapshot Repository</name>
+            <url>http://maven.basistech.net/nexus/content/repositories/snapshots/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
